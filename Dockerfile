@@ -1,6 +1,6 @@
 FROM quay.io/centos/centos:stream8
 
-RUN dnf install -y python3.11 glibc-langpack-en
+RUN dnf install -y glibc-langpack-en python3.11 make
 
 # Create and activate virtual environment
 RUN python3.11 -m venv /venv
