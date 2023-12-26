@@ -1,6 +1,8 @@
 name: Publish heyyou distribution to PyPI and TestPyPI
 
 on: push
+  branches:
+    - main
 
 jobs:
   build:
@@ -94,7 +96,7 @@ jobs:
 
   publish-to-testpypi:
     name: Publish heyyou distribution to TestPyPI
-    if: "github.ref == 'refs/heads/main'"  # publish to TestPyPI on push to main, not on tag pushes or dev branches
+    if: startsWith(github.ref, 'refs/heads/')  # only publish to TestPyPI on pushes to main
     needs:
     - build
     runs-on: ubuntu-latest
