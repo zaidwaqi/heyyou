@@ -2,7 +2,7 @@
 
 `heyyou` is a command line application that prints out 'Hey, You!' in the chosen language.
 
-Currently, `heyyou` supports the following languages:
+Currently, `heyyou` supports the following languages and many more:
 - English (EN)
 - Spanish (ES)
 - French (FR)
