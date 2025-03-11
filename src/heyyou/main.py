@@ -19,6 +19,7 @@ def heyyou():
         'RU': 'Привет, ты!',
         'AR': 'مرحبا أنت!',
         'HI': 'नमस्ते, तुम!',
+        'TH': 'เฮ้ย! คุณ',
     }
 
     if language_code and language_code in greetings:
